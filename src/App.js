@@ -7,8 +7,7 @@ function App() {
   const [pratos, setPratos] = useState([]);
 
   useEffect(() => {
-    //fetch('https://jcmsilv-alura-pizza.herokuapp.com/api/pratos/')
-    fetch('http://localhost:8000/api/pratos/')
+    fetch('https://jcmsilv-alura-pizza.herokuapp.com/api/pratos/')    
       .then(resposta => resposta.json())
       .then(dados => setPratos(dados))
   }, []);
